@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-image: linear-gradient(
+    to right top,
+    #212529,
+    #24292d,
+    #282d31,
+    #2b3136,
+    #2f353a,
+    #32383e,
+    #363c42,
+    #393f46,
+    #3d434a,
+    #41474e,
+    #454c53,
+    #495057
+  );
+  height: 1000vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
