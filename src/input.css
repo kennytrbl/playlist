@@ -18,11 +18,53 @@
     #454c53,
     #495057
   );
-  height: 1000vh;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.song-row img {
+  width: 120px;
+  height: auto;
+}
+
+@media screen and (max-width: 430px) {
+  .song-row img {
+    width: 80px;
+  }
+  .playlist-image {
+    display: none;
+  }
+  .playlist-info {
+    padding-left: 0px;
+  }
+  .playlist-info span {
+    font-size: 1rem;
+  }
+  .songAlbum {
+    display: none;
+  }
+  .songDuration {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .songNumber {
+    display: none;
+  }
 }

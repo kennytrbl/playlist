@@ -3,15 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playlist</title>
+    <title>Kenny's bops</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="max-w-[80%] mx-auto my-4 w-4/5 text-xl text-white">
-      <p>playlist</p>
-      <div class="container flex flex-row flex-wrap gap-2.5 my-4"></div>
+    <div class="container mx-auto my-5 p-5">
+      <div
+        class="playlist mb-10 bg-[rgba(0,0,0,0.6)] flex flex-row items-center p-5 rounded-md"
+      >
+        <div class="playlist-image grid grid-cols-[repeat(2,1fr)] gap-2.5 pl-5">
+          <img
+            src="https://img.youtube.com/vi/jRRCWFLAO6k/mqdefault.jpg"
+            class="w-32 h-32 object-cover"
+          />
+          <img
+            src="https://img.youtube.com/vi/w0sOLQXCGjE/mqdefault.jpg"
+            class="w-32 h-32 object-cover"
+          />
+          <img
+            src="https://img.youtube.com/vi/VUsDpXkTntc/mqdefault.jpg"
+            class="w-32 h-32 object-cover"
+          />
+          <img
+            src="https://img.youtube.com/vi/phuiiNCxRMg/mqdefault.jpg"
+            class="w-32 h-32 object-cover"
+          />
+        </div>
+        <div class="playlist-info mt-5 text-left pl-20">
+          <h1 class="text-3xl font-bold text-white mb-2.5">bops</h1>
+          <p class="text-lg text-gray-300 mb-2.5">
+            what i am listening to right now
+          </p>
+          <div class="playlist-stats mt-3 flex items-center">
+            <span class="block text-lg text-white"
+              ><span id="total-songs"></span
+            ></span>
+            <span class="block text-lg text-white"
+              ><span id="total-duration"></span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div id="song-list"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
