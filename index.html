@@ -16,7 +16,7 @@
   <body>
     <div class="container mx-auto my-5 p-5">
       <div
-        class="playlist mb-10 bg-[rgba(0,0,0,0.6)] flex flex-row items-center p-5 rounded-md"
+        class="playlist mb-5 bg-[rgba(0,0,0,0.6)] flex flex-row items-center p-5 rounded-md"
       >
         <div class="playlist-image grid grid-cols-[repeat(2,1fr)] gap-2.5 pl-5">
           <img
@@ -41,7 +41,7 @@
           <p class="text-lg text-gray-300 mb-2.5">
             what i am listening to right now
           </p>
-          <div class="playlist-stats mt-3 flex items-center">
+          <div class="playlist-stats flex items-center">
             <span class="block text-lg text-white"
               ><span id="total-songs"></span
             ></span>
@@ -51,8 +51,122 @@
           </div>
         </div>
       </div>
+      <div class="media mb-2.5">
+        <div class="flex flex-row space-x-4 ml-4">
+          <a
+            href="https://www.youtube.com/watch?v=rCeM57e2BfU&list=PLXWIpfPoBagjtqU5kTT9KR9RxTNI5EtC3&pp=gAQBiAQB8AUB"
+            target="_blank"
+            class="hover:transform hover:scale-125 transition-transform duration-200 mr-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f3ffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </a>
+          <a
+            id="random-link"
+            href="#"
+            target="_blank"
+            class="hover:transform hover:scale-125 transition-transform duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f3ffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 3h5v5M4 20L20.2 3.8M21 16v5h-5M15 15l5.1 5.1M4 4l5 5"
+              />
+            </svg>
+          </a>
+          <div>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search in playlist"
+              class="search-input p-2 border rounded-md ml-4"
+            />
+          </div>
+          <div class="customButton relative inline-block text-left">
+            <p
+              id="dropdownButton"
+              class="text-white font-semibold py-2 px-4 rounded-md hover:text-grey-400 cursor-pointer"
+            >
+              Custom order
+            </p>
+            <div
+              id="dropdownMenu"
+              class="absolute left-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg hidden"
+            >
+              <ul class="py-1">
+                <li>
+                  <a
+                    href="#"
+                    class="customOrder block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >Custom Order</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="headerTitle block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >Title</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="headerAlbum block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >Album</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="headerDuration block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >Duration</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="header-row"
+        class="flex items-center justify-between p-4 text-white mt-4"
+      >
+        <span class="headerNumber w-10 text-center mr-4">#</span>
+        <span class="headerTitle flex-1 ml-4 mr-auto hover:text-gray-400"
+          >Title</span
+        >
+        <span class="headerAlbum flex-1 ml-[120px] mr-auto hover:text-gray-400"
+          >Album</span
+        >
+        <span class="headerDuration w-16 text-right hover:text-gray-400"
+          >Duration</span
+        >
+      </div>
+      <hr />
       <div id="song-list"></div>
     </div>
+
     <script src="script.js" defer></script>
   </body>
 </html>

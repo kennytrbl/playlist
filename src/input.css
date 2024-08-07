@@ -18,7 +18,10 @@
     #454c53,
     #495057
   );
-  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -35,6 +38,7 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 40px;
 }
 
 .song-row img {
@@ -42,10 +46,19 @@ body {
   height: auto;
 }
 
-@media screen and (max-width: 430px) {
-  .song-row img {
-    width: 80px;
+@media screen and (max-width: 820px) {
+  .playlist-stats span {
+    font-size: 1rem;
   }
+  .headerAlbum {
+    margin-left: 220px;
+  }
+  .songAlbum {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 430px) {
   .playlist-image {
     display: none;
   }
@@ -54,6 +67,21 @@ body {
   }
   .playlist-info span {
     font-size: 1rem;
+  }
+  .headerAlbum {
+    display: none;
+  }
+  .headerDuration {
+    display: none;
+  }
+  .search-input {
+    display: none;
+  }
+  .customButton {
+    display: none;
+  }
+  .song-row img {
+    width: 80px;
   }
   .songAlbum {
     display: none;
@@ -64,6 +92,12 @@ body {
 }
 
 @media screen and (max-width: 320px) {
+  .playlist-info p {
+    font-size: 0.9rem;
+  }
+  .playlist-stats span {
+    font-size: 0.8rem;
+  }
   .songNumber {
     display: none;
   }
