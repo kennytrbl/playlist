@@ -286,7 +286,7 @@ var songs = [
         videoId: "hoknJbAsOZY",
         name: "Sometimes (original.Crush)",
         artist: "Yerin Baek",
-        album: "Crush On You",
+        album: "",
         duration: "4:25",
     },
     {
