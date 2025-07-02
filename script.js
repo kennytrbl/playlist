@@ -10,39 +10,11 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 var _a;
 var songs = [
     {
-        videoId: "rCeM57e2BfU",
-        name: "And July (Feat. DEAN, DJ Friz)",
-        artist: "Heize",
-        album: "And July",
-        duration: "3:48",
-    },
-    {
-        videoId: "sk6WiGOmlso",
-        name: "Shut Up & Groove (Feat. DEAN)",
-        artist: "Heize",
-        album: "And July",
-        duration: "3:20",
-    },
-    {
         videoId: "eelfrHtmk68",
         name: "D (Half Moon) ft. Gaeko",
         artist: "DEANTRBL",
         album: "130 Mood: TRBL",
         duration: "3:51",
-    },
-    {
-        videoId: "8wpX6164uk4",
-        name: "풀어(Pour Up) (ft. Zico)",
-        artist: "DEANTRBL",
-        album: "130 Mood: TRBL",
-        duration: "3:33",
-    },
-    {
-        videoId: "3ze6drtwiE4",
-        name: "Bonnie & Clyde",
-        artist: "DEANTRBL",
-        album: "130 Mood: TRBL",
-        duration: "3:44",
     },
     {
         videoId: "D2sMg8mCHds",
@@ -101,25 +73,11 @@ var songs = [
         duration: "3:47",
     },
     {
-        videoId: "QU9c0053UAU",
-        name: "Seven (feat. Latto)",
-        artist: "Jung Kook",
-        album: "Seven (feat. Latto)",
-        duration: "3:46",
-    },
-    {
         videoId: "UNo0TG9LwwI",
         name: "Standing Next to You",
         artist: "Jung Kook",
         album: "GOLDEN",
         duration: "3:46",
-    },
-    {
-        videoId: "SctIHP5dPyM",
-        name: "DIE 4 YOU",
-        artist: "DEANTRBL",
-        album: "DIE 4 YOU",
-        duration: "3:15",
     },
     {
         videoId: "D8VEhcPeSlc",
@@ -248,13 +206,6 @@ var songs = [
         duration: "4:18",
     },
     {
-        videoId: "Dbx5-OXjGe0",
-        name: "peach eyes",
-        artist: "wave to earth",
-        album: "0.1 flaws and all.",
-        duration: "3:05",
-    },
-    {
         videoId: "n6B5gQXlB-0",
         name: "CRAZY",
         artist: "LE SSERAFIM",
@@ -274,13 +225,6 @@ var songs = [
         artist: "SOYOU, Junggigo, LIL BOI",
         album: "Some",
         duration: "4:45",
-    },
-    {
-        videoId: "6DLLVIOBRmQ",
-        name: "light",
-        artist: "wave to earth",
-        album: "wave 0.01",
-        duration: "3:45",
     },
     {
         videoId: "hoknJbAsOZY",
