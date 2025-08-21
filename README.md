@@ -2,4 +2,6 @@
 
 What I am listening to on Spotify and Youtube.
 
-https://playlist-swart.vercel.app/
+## Tech Stack
+
+HTML, CSS, Javascript, Tailwindcss

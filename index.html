@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenny's bops</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,46 +15,26 @@
   </head>
   <body>
     <div class="container mx-auto my-5 p-5">
-      <div
-        class="playlist mb-5 bg-[rgba(0,0,0,0.6)] flex flex-row items-center p-5 rounded-md"
-      >
+      <div class="playlist mb-5 bg-[rgba(0,0,0,0.6)] flex flex-row items-center p-5 rounded-md">
         <div class="playlist-image grid grid-cols-[repeat(2,1fr)] gap-2.5 pl-5">
-          <img
-            src="https://img.youtube.com/vi/jRRCWFLAO6k/mqdefault.jpg"
-            class="w-32 h-32 object-cover"
-          />
-          <img
-            src="https://img.youtube.com/vi/w0sOLQXCGjE/mqdefault.jpg"
-            class="w-32 h-32 object-cover"
-          />
-          <img
-            src="https://img.youtube.com/vi/VUsDpXkTntc/mqdefault.jpg"
-            class="w-32 h-32 object-cover"
-          />
-          <img
-            src="https://img.youtube.com/vi/phuiiNCxRMg/mqdefault.jpg"
-            class="w-32 h-32 object-cover"
-          />
+          <img src="https://img.youtube.com/vi/jRRCWFLAO6k/mqdefault.jpg" class="w-32 h-32 object-cover" />
+          <img src="https://img.youtube.com/vi/w0sOLQXCGjE/mqdefault.jpg" class="w-32 h-32 object-cover" />
+          <img src="https://img.youtube.com/vi/VUsDpXkTntc/mqdefault.jpg" class="w-32 h-32 object-cover" />
+          <img src="https://img.youtube.com/vi/phuiiNCxRMg/mqdefault.jpg" class="w-32 h-32 object-cover" />
         </div>
         <div class="playlist-info mt-5 text-left pl-20">
           <h1 class="text-3xl font-bold text-white mb-2.5">bops</h1>
-          <p class="text-lg text-gray-300 mb-2.5">
-            what i am listening to right now
-          </p>
+          <p class="text-lg text-gray-300 mb-2.5">what i am listening to right now</p>
           <div class="playlist-stats flex items-center">
-            <span class="block text-lg text-white"
-              ><span id="total-songs"></span
-            ></span>
-            <span class="block text-lg text-white"
-              ><span id="total-duration"></span
-            ></span>
+            <span class="block text-lg text-white"><span id="total-songs"></span></span>
+            <span class="block text-lg text-white"><span id="total-duration"></span></span>
           </div>
         </div>
       </div>
       <div class="media mb-2.5">
         <div class="flex flex-row space-x-4 ml-4">
           <a
-            href="https://www.youtube.com/watch?v=rCeM57e2BfU&list=PLXWIpfPoBagjtqU5kTT9KR9RxTNI5EtC3&pp=gAQBiAQB8AUB"
+            href="https://www.youtube.com/watch?v=eelfrHtmk68&list=PLXWIpfPoBagjtqU5kTT9KR9RxTNI5EtC3&index=1"
             target="_blank"
             class="hover:transform hover:scale-125 transition-transform duration-200 mr-4"
           >
@@ -89,9 +69,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path
-                d="M16 3h5v5M4 20L20.2 3.8M21 16v5h-5M15 15l5.1 5.1M4 4l5 5"
-              />
+              <path d="M16 3h5v5M4 20L20.2 3.8M21 16v5h-5M15 15l5.1 5.1M4 4l5 5" />
             </svg>
           </a>
           <div>
@@ -115,32 +93,16 @@
             >
               <ul class="py-1">
                 <li>
-                  <a
-                    href="#"
-                    class="customOrder block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Custom Order</a
-                  >
+                  <a href="#" class="customOrder block px-4 py-2 text-gray-700 hover:bg-gray-100">Custom Order</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="headerTitle block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Title</a
-                  >
+                  <a href="#" class="headerTitle block px-4 py-2 text-gray-700 hover:bg-gray-100">Title</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="headerAlbum block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Album</a
-                  >
+                  <a href="#" class="headerAlbum block px-4 py-2 text-gray-700 hover:bg-gray-100">Album</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="headerDuration block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Duration</a
-                  >
+                  <a href="#" class="headerDuration block px-4 py-2 text-gray-700 hover:bg-gray-100">Duration</a>
                 </li>
               </ul>
             </div>
@@ -148,20 +110,11 @@
         </div>
       </div>
 
-      <div
-        id="header-row"
-        class="flex items-center justify-between p-4 text-white mt-4"
-      >
+      <div id="header-row" class="flex items-center justify-between p-4 text-white mt-4">
         <span class="headerNumber w-10 text-center mr-4">#</span>
-        <span class="headerTitle flex-1 ml-4 mr-auto hover:text-gray-400"
-          >Title</span
-        >
-        <span class="headerAlbum flex-1 ml-[120px] mr-auto hover:text-gray-400"
-          >Album</span
-        >
-        <span class="headerDuration w-16 text-right hover:text-gray-400"
-          >Duration</span
-        >
+        <span class="headerTitle flex-1 ml-4 mr-auto hover:text-gray-400">Title</span>
+        <span class="headerAlbum flex-1 ml-[120px] mr-auto hover:text-gray-400">Album</span>
+        <span class="headerDuration w-16 text-right hover:text-gray-400">Duration</span>
       </div>
       <hr />
       <div id="song-list"></div>
